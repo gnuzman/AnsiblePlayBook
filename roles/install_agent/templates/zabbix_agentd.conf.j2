@@ -92,7 +92,7 @@ LogFileSize=0
 # Default:
 # Server=
 
-Server={{zabbixserver}}
+Server={{ zabbixserver }}
 
 ### Option: ListenPort
 #	Agent will listen on this port for connections from the server.
@@ -100,7 +100,7 @@ Server={{zabbixserver}}
 # Mandatory: no
 # Range: 1024-32767
 # Default:
-ListenPort={{zabbixagent_port}}
+ListenPort={{ zabbixagent_port }}
 
 ### Option: ListenIP
 #	List of comma delimited IP addresses that the agent should listen on.
@@ -133,7 +133,7 @@ ListenPort={{zabbixagent_port}}
 # Default:
 # ServerActive=
 
-ServerActive={{zabbixserver}}
+ServerActive={{ zabbixserver }}:{{ zabbixserver_port }}
 
 ### Option: Hostname
 #	Unique, case sensitive hostname.
@@ -144,7 +144,7 @@ ServerActive={{zabbixserver}}
 # Default:
 # Hostname=
 
-Hostname={{ansible_hostname}}
+Hostname={{ ansible_hostname }}
 
 ### Option: HostnameItem
 #	Item used for generating Hostname if it is undefined. Ignored if Hostname is defined.
