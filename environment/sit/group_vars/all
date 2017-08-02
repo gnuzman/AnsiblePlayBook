@@ -1,0 +1,4 @@
+---
+zabbixserver: 192.168.42.1
+zabbixserver_port: 10051
+zabbixagent_port: 10050

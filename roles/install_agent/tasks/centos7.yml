@@ -9,6 +9,11 @@
     name: /tmp/zabbix-agent-3.2.7-1.el7.x86_64.rpm
     state: present
 
+- name: confige zabbix-agent
+  template:
+    src: zabbix_agentd.conf.j2
+    dest: /etc/zabbix/zabbix_agentd.conf
+
 - name: start zabbix-agent
   service:
     name: zabbix-agent
@@ -19,4 +24,5 @@
 
 - name: wait_for
   wait_for:
-    delay: 10
+    port: {{zabbixagent_port}}
+    delay: 6
