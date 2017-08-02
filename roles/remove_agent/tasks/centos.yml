@@ -2,7 +2,7 @@
 - name: stop zabbix-agent
   service:
     name: zabbix-agent
-    state: stop
+    state: stopped
 
 - name: remove zabbix-agent
   yum:
