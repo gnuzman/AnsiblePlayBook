@@ -1,2 +1,3 @@
-- name: test shell
-  file: path=/home/house/test state=directory
+---
+- include: centos7.yml
+  when: ansible_distribution == "CentOS" and ansible_distribution_major_version == "7"
