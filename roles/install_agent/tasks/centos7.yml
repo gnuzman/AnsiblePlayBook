@@ -14,3 +14,9 @@
     name: zabbix-agent
     state: restarted
 
+- name: enable zabbix-agent startup
+  shell: systemctl enable zabbix-agent
+
+- name: wait_for
+  wait_for:
+    delay: 10

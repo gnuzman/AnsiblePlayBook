@@ -1,0 +1,5 @@
+---
+- name: remove zabbix-agent
+  hosts: all
+  roles:
+    - remove_agent
