@@ -1,0 +1,2 @@
+- name: test shell
+  file: path=/home/house/test state=directory
