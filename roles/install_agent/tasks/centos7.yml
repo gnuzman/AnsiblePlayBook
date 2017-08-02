@@ -22,7 +22,7 @@
 - name: enable zabbix-agent startup
   shell: systemctl enable zabbix-agent
 
-- name: wait_for
-  wait_for:
-    port: {{ zabbixagent_port }}
-    delay: 6
+#- name: wait_for
+#  wait_for:
+#    port: {{ zabbixagent_port }}
+#    delay: 6
