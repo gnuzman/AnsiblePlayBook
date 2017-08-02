@@ -1,12 +1,12 @@
 ---
 - name: copy zabbix-agent
   copy:
-    src: zabbix-agent-3.2.7-1.el7.x86_64.rpm
-    dest: /tmp/zabbix-agent-3.2.7-1.el7.x86_64.rpm
+    src: zabbix-agent-3.2.7-1.el6.x86_64.rpm
+    dest: /tmp/zabbix-agent-3.2.7-1.el6.x86_64.rpm
 
 - name: install zabbix-agent
   yum:
-    name: /tmp/zabbix-agent-3.2.7-1.el7.x86_64.rpm
+    name: /tmp/zabbix-agent-3.2.7-1.el6.x86_64.rpm
     state: present
 
 - name: confige zabbix-agent
