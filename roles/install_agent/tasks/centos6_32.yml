@@ -1,5 +1,5 @@
 ---
-- name: copy zabbix-agent
+- name: copy zabbix-agent centos 6 32
   copy:
     src: zabbix-agent-3.2.7-1.el6.i686.rpm
     dest: /tmp/zabbix-agent-3.2.7-1.el6.i686.rpm
